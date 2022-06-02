@@ -68,3 +68,79 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+## **Instalación NODEJS (Linux)**
+
+- [Link del Repositorio GitHub](https://github.com/nodesource/distributions/blob/master/README.md)
+
+
+
+# **Instalación desde FEDORA**
+
+Para en caso de _fedora_ solo se nececita copiar y pegar el link(**se recomienda checar el repositorio por situaciones de actualización**):
+
+```
+ _curl -fsSL https://rpm.nodesource.com/setup_17.x | bash -_
+
+```
+
+El link lo escribes dentro de la terminal con el superusuario **root**. y ejecutas el siguiente comando:
+
+```
+$ sudo dnf install nodejs
+```
+
+Compruebas con **_node --version_** y te aparecera la version que quiere decir que se instalo de forma exitosa.
+Tambien se tiene que verificar la version del **npm** y es lo mismo como el anterior comando: **_npm --version_**.
+
+## **DESINSTALACIÓN**
+
+Para la desisntalación de **nodejs** junto con **_npm_** se requiere con el siguiente comando
+
+```
+$ sudo dnf remove nodejs
+```
+
+#
+
+## **Creación de proyecto NodeJs**
+
+```
+$ npm init
+```
+
+### Notas:
+
+Para reconstruir los modulos de Node **(node_modules)**. Utilizamos el siguiente comando:
+
+```
+$ npm install
+```
+
+Y para construir el build, o ejecutar el proyecto:
+
+```
+$ npm run build
+```
+
+# Creación de un Proyecto con React
+
+Deberá tener Node 14.0.0 o una versión posterior en su máquina de desarrollo local (pero no es obligatorio en el servidor). Recomendamos utilizar la última versión de LTS. Puede usar nvm (macOS/Linux) o nvm-windows para cambiar las versiones de Node entre diferentes proyectos.
+
+### **npx**
+```
+npx create-react-app my-app(nombre de tu carpeta)
+```
+Si ya creaste una carpeta, que dentro de ella es donde quieres almacenar tu proyecto con los demas archivos puedes utilizar el siguiente comando:
+
+```
+npx create-react-app ./
+
+```
+**_Advertencia: Para tus carpetas tienes que empezar con letra minuscula ya que es requisito que tu carpeta del proyecto tiene que empezar con letra minuscula y evitar de poner nombres claves como REACT O REACT-DOM _**
+
+
+
+
+
