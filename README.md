@@ -69,12 +69,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
-## **Instalación NODEJS (Linux)**
+### **Instalación NODEJS (Linux)**
 
 - [Link del Repositorio GitHub](https://github.com/nodesource/distributions/blob/master/README.md)
-
-
 
 # **Instalación desde FEDORA**
 
@@ -110,7 +107,7 @@ $ sudo dnf remove nodejs
 $ npm init
 ```
 
-### Notas:
+## Notas:
 
 Para reconstruir los modulos de Node **(node_modules)**. Utilizamos el siguiente comando:
 
@@ -129,18 +126,16 @@ $ npm run build
 Deberá tener Node 14.0.0 o una versión posterior en su máquina de desarrollo local (pero no es obligatorio en el servidor). Recomendamos utilizar la última versión de LTS. Puede usar nvm (macOS/Linux) o nvm-windows para cambiar las versiones de Node entre diferentes proyectos.
 
 ### **npx**
+
 ```
 npx create-react-app my-app(nombre de tu carpeta)
 ```
+
 Si ya creaste una carpeta, que dentro de ella es donde quieres almacenar tu proyecto con los demas archivos puedes utilizar el siguiente comando:
 
 ```
 npx create-react-app ./
 
 ```
-**_Advertencia: Para tus carpetas tienes que empezar con letra minuscula ya que es requisito que tu carpeta del proyecto tiene que empezar con letra minuscula y evitar de poner nombres claves como REACT O REACT-DOM _**
 
-
-
-
-
+**_Advertencia: Para tus carpetas tienes que empezar con letra minuscula ya que es requisito que tu carpeta del proyecto tiene que empezar con letra minuscula y evitar de poner nombres claves como REACT O REACT-DOM_**
