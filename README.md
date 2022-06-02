@@ -139,3 +139,17 @@ npx create-react-app ./
 ```
 
 **_Advertencia: Para tus carpetas tienes que empezar con letra minuscula ya que es requisito que tu carpeta del proyecto tiene que empezar con letra minuscula y evitar de poner nombres claves como REACT O REACT-DOM_**
+
+# ¿Cómo mostrar la versión de React?
+
+Podemos averiguar la versión React y React Native a través de la herramienta de línea de comandos. Solo tenemos que ejecutar los siguientes comandos para obtener los detalles de la versión.
+
+```
+npm view react version
+```
+
+Paara obtener laa versión de **React Native**, use el siguiente comando:
+
+```
+npm ls react-native -g
+```
