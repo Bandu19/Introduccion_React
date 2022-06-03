@@ -153,3 +153,17 @@ Paara obtener laa versión de **React Native**, use el siguiente comando:
 ```
 npm ls react-native -g
 ```
+
+# JSX Componentes y elementos
+
+Ejemplo para reutilizar muchos componentes.
+
+- **a)** ![Ejemplo Reutilización](./src/imagen.png)
+
+- **b)** ![Ejemplo Reutilización](./src/imagen_2.png)
+
+Otra propiedad es la de **Children**:
+
+- **a)** ![Ejemplo Reutilización](./src/imagen_3.png)
+
+- **b)** ![Ejemplo Reutilización](./src/imagen_4.png)

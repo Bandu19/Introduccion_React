@@ -1,8 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
+/**
+ * Nota: App() es un componente que retorna los elementos de la sintaxis JSX
+ *
+ */
 
-function App() {
+function App(props) {
   return (
+    //Esto es una sintaxis de JSX
+
+    // className="" = Son atributos
+
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -13,7 +21,9 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          {/* Aqui mandamos a llamar la propiedad
+        children */}
+          {props.children}
         </a>
       </header>
     </div>
