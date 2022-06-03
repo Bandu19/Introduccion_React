@@ -158,12 +158,14 @@ npm ls react-native -g
 
 Ejemplo para reutilizar muchos componentes.
 
-- **a)** ![Ejemplo Reutilización](./src/imagen.png)
+- **a)** ![Ejemplo Reutilización](./src/img/imagen.png)
 
-- **b)** ![Ejemplo Reutilización](./src/imagen_2.png)
+- **b)** ![Ejemplo Reutilización](./src/img/imagen_2.png)
 
 Otra propiedad es la de **Children**:
 
-- **a)** ![Ejemplo Reutilización](./src/imagen_3.png)
+- **a)** ![Ejemplo Reutilización](./src/img/imagen_3.png)
 
-- **b)** ![Ejemplo Reutilización](./src/imagen_4.png)
+- **b)** ![Ejemplo Reutilización](./src/img/imagen_4.png)
+
+# Componentes de TODO MACHINE

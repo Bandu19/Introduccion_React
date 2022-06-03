@@ -6,9 +6,6 @@ import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  //Propiedad Children
-  <App>
-    
-    <h1>Buenas Criaturita del Señor</h1>
-  </App>
+  //Componente App
+  <App />
 );
