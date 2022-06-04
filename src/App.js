@@ -1,5 +1,5 @@
 import React from "react";
-import "./App.css";
+// import "./App.css";
 import {
   TodoCounter,
   TodoSearch,
@@ -24,7 +24,7 @@ function App() {
     //Pedir a React una etiqueta Invisible
 
     //Una etiqueta por Componente
-
+    // Al utilizar React.Fragment ya estaria importando al CSS
     <React.Fragment>
       <TodoCounter />
       {/* <h2>Has Completado 2 de 3 TODOs</h2> */}
@@ -38,7 +38,11 @@ function App() {
         {/* ESTE ES NUESTRO CHILDREN */}
         {todos.map((todo) => (
           //Aqui llamamos al objeto literal "todos"
-          <TodoItem key={todo.text} text={todo.text} />
+          <TodoItem
+            key={todo.text}
+            text={todo.text}
+            completed={todo.completed}
+          />
         ))}
       </TodoList>
 
