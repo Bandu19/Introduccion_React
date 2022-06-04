@@ -172,9 +172,9 @@ Otra propiedad es la de **Children**:
 
 Principalmente uno de los eventos mas clasicos son **OnClick** que y aqui se representa de manera diferente:
 
-## Formas de OnClick
+## **Formas de onClick**
 
-- **1) Forma de OnClick**
+- **1) Forma de onClick**
 
 ```
 funtion CreateTodoButton(props){
@@ -194,7 +194,7 @@ Y como resultado nos arroja este mensaje cuando demos click en el **button**:
 
 ![Imagen_Onclick](./src/img/imagen_6.png)
 
-- **2) Forma de OnClick**
+- **2) Forma de onClick**
 
 ```
 funtion CreateTodoButton(props){
@@ -222,7 +222,7 @@ Y nuevamente nos dara el mismo resultado:
 
 **_Nota_**: **_Independientemente cuando queremos en este caso reutilizar el evento Onclick debemos de hacer el sigueinte punto._**
 
-- **3) Forma de OnClick (reutilizar)**
+- **3) Forma de onClick (reutilizar)**
 
 ```
 const onClickButton = (msg) => alert(msg);
@@ -247,3 +247,22 @@ Pero recuerda que esta 3 forma es para reutilizar el evento Onclick
 
 Finalmente como quedo el archivo:
 ![Imagen_Onclick](./src/img/imagen_6.png)
+
+## **Formas de onChange**
+
+**onChange** es otro evento muy común que se utiliza por decir un ejemplo los **input** y comunmente este te da muchos eventos internos cuando escribimos.
+Por ejemplo:
+![Imagen_Onclick](./src/img/imagen_7.png)
+
+Para esta Clase se utilizo una funcion donde dentro de esa funcion devolviera una funcion para utilizar dichos valores.
+Ejemplo:
+
+![Imagen_Onclick](./src/img/imagen_8.png)
+
+El **.target.value** es uno de los eventos internos que nos aloja para comunmente ver en la consola como se va agrendo uno por uno cuando tecleamos.
+
+Ejemplo:
+
+- **a)** ![Imagen_Onclick](./src/img/imagen_9.png)
+
+- **b)** ![Imagen_Onclick](./src/img/imagen_10.png)

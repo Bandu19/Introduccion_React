@@ -6,7 +6,18 @@ function TodoCounter() {
 }
 
 function TodoSearch() {
-  return <input className="TodoSearch" placeholder="Cebolla" />;
+  // Este es el evento mas Especial
+  const onSearchValueChange = (event) => {
+    console.log(event.target.value);
+  };
+
+  return (
+    <input
+      className="TodoSearch"
+      placeholder="Cebolla"
+      onChange={onSearchValueChange}
+    />
+  );
 }
 
 function TodoList(props) {
@@ -17,11 +28,20 @@ function TodoList(props) {
   );
 }
 function TodoItem(props) {
+  //
+  const onComplete = () => {
+    alert("Ya completaste el todo " + props.text);
+  };
+
+  const onDelete = () => {
+    alert("Borraste el todo " + props.text);
+  };
   return (
     <li className="TodoItem">
       <span
         // Si props.completed = TRUE enseguida se activara el estilo CSS
         className={`Icon Icon-check ${props.completed && "Icon-check--active"}`}
+        onClick={onComplete}
       >
         √
       </span>
@@ -31,7 +51,13 @@ function TodoItem(props) {
         {props.text}
       </p>
 
-      <span className="Icon Icon-delete">X</span>
+      <span
+        //
+        className="Icon Icon-delete"
+        onClick={onDelete}
+      >
+        X
+      </span>
     </li>
   );
 }
