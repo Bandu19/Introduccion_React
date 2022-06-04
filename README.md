@@ -168,4 +168,79 @@ Otra propiedad es la de **Children**:
 
 - **b)** ![Ejemplo Reutilización](./src/img/imagen_4.png)
 
-# Componentes de TODO MACHINE
+# Manejo de eventos
+
+Principalmente uno de los eventos mas clasicos son **OnClick** que y aqui se representa de manera diferente:
+
+## Formas de OnClick
+
+- **1) Forma de OnClick**
+
+```
+funtion CreateTodoButton(props){
+  return(
+
+    <button className="CreateTodoButton"
+    onClick={() => alert("Aqui se deberia abrir el modal")}
+    >
+
+      +
+    </button>
+  );
+}
+```
+
+Y como resultado nos arroja este mensaje cuando demos click en el **button**:
+
+![Imagen_Onclick](./src/img/imagen_6.png)
+
+- **2) Forma de OnClick**
+
+```
+funtion CreateTodoButton(props){
+
+    const onClickButton = () => {
+       alert("Aqui se debería abrir el modal");
+    };
+
+  return(
+
+    <button
+
+    className="CreateTodoButton"
+    onClick={onClickButton}
+    >
+      +
+    </button>
+
+  );
+}
+```
+
+Y nuevamente nos dara el mismo resultado:
+![Imagen_Onclick](./src/img/imagen_6.png)
+
+**_Nota_**: **_Independientemente cuando queremos en este caso reutilizar el evento Onclick debemos de hacer el sigueinte punto._**
+
+- **3) Forma de OnClick (reutilizar)**
+
+```
+const onClickButton = (msg) => alert(msg);
+return (
+    /**
+     * ES Requisito que cuando ocupamos por decir el "onClick" utilicemos una funcion
+     * tipo flecha { ()=> } ya que es importante.
+     */
+    <button
+      //
+      className="CreateTodoButton"
+      onClick={() => onClickButton("Aqui se deberia abrir el modal")}
+    >
+      +
+    </button>
+  );
+```
+
+Y nuevamente nos arroja el mismo resultado:
+![Imagen_Onclick](./src/img/imagen_6.png)
+Pero recuerda que esta 3 forma es para reutilizar el evento Onclick

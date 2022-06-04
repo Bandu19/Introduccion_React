@@ -37,7 +37,30 @@ function TodoItem(props) {
 }
 
 function CreateTodoButton(props) {
-  return <button className="CreateTodoButton">+</button>;
+  /**Aqui es un Evento que devuelve a una funtion 
+     
+  const onClickButton = () => {
+       alert("Aqui se debería abrir el modal");
+    };
+  */
+
+  /**Aqui es para Ocupar este Evento para otros Eventos (Reutilizar) */
+
+  const onClickButton = (msg) => alert(msg);
+
+  return (
+    /**
+     * ES Requisito que cuando ocupamos por decir el "onClick" utilicemos una funcion
+     * tipo flecha { ()=> } ya que es importante.
+     */
+    <button
+      //
+      className="CreateTodoButton"
+      onClick={() => onClickButton("Aqui se deberia abrir el modal")}
+    >
+      +
+    </button>
+  );
 }
 
 export { TodoCounter, TodoSearch, TodoList, TodoItem, CreateTodoButton };
