@@ -244,3 +244,6 @@ return (
 Y nuevamente nos arroja el mismo resultado:
 ![Imagen_Onclick](./src/img/imagen_6.png)
 Pero recuerda que esta 3 forma es para reutilizar el evento Onclick
+
+Finalmente como quedo el archivo:
+![Imagen_Onclick](./src/img/imagen_6.png)
