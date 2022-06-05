@@ -6,18 +6,26 @@ function TodoCounter() {
 }
 
 function TodoSearch() {
+  // React Hooks
+  const [searchValue, setSearchValue] = React.useState("");
+
   // Este es el evento mas Especial
+
   const onSearchValueChange = (event) => {
-    console.log(event.target.value);
+    console.log(event.target.value); // Lo que escribimos en el "input"
+    setSearchValue(event.target.value);
   };
 
-  return (
+  // DETALLE con la []
+  return [
     <input
       className="TodoSearch"
       placeholder="Cebolla"
+      value={searchValue}
       onChange={onSearchValueChange}
-    />
-  );
+    />,
+    <p>{searchValue}</p>,
+  ];
 }
 
 function TodoList(props) {
