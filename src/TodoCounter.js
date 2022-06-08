@@ -1,13 +1,18 @@
 import React from "react";
 import "./TodoCounter.css";
 
-function TodoCounter() {
-  return <h2 className="TodoCounter">Has Completado 3 de 3 TODOs</h2>;
+function TodoCounter({ total, completed }) {
+  // const {total, complet} = props;
+  return (
+    <h2 className="TodoCounter">
+      Has Completado {completed} de {total} TODOs
+    </h2>
+  );
 }
 
-function TodoSearch() {
+function TodoSearch({ searchValue, setSearchValue }) {
   // React Hooks
-  const [searchValue, setSearchValue] = React.useState("");
+  // const [] = React.useState("");
 
   // Este es el evento mas Especial
 
@@ -17,15 +22,15 @@ function TodoSearch() {
   };
 
   // DETALLE con la []
-  return [
+  return (
     <input
       className="TodoSearch"
       placeholder="Cebolla"
       value={searchValue}
       onChange={onSearchValueChange}
-    />,
-    <p>{searchValue}</p>,
-  ];
+    />
+    //, <p>{searchValue}</p>,
+  );
 }
 
 function TodoList(props) {
