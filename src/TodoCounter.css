@@ -77,6 +77,11 @@ ul {
 .Icon-check--active {
   color: #4caf50;
 }
+
+.Icon-check--desactive {
+  color: none;
+}
+
 .Icon-delete {
   position: absolute;
   top: 6px;
